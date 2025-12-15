@@ -6,6 +6,7 @@ services:
         restart: always
         environment:
             - WORKER_PORT=${WORKER_PORT:-5566}
+            - DISABLE_FLOWISE_BRANDING=true
 
             # DATABASE
             - DATABASE_PATH=${DATABASE_PATH}

@@ -6,6 +6,7 @@ services:
         restart: always
         environment:
             - PORT=${PORT}
+            - DISABLE_FLOWISE_BRANDING=true
 
             # DATABASE
             - DATABASE_PATH=${DATABASE_PATH}
@@ -60,6 +61,7 @@ services:
             - FLOWISE_FILE_SIZE_LIMIT=${FLOWISE_FILE_SIZE_LIMIT}
             - SHOW_COMMUNITY_NODES=${SHOW_COMMUNITY_NODES}
             - DISABLE_FLOWISE_TELEMETRY=${DISABLE_FLOWISE_TELEMETRY}
+            - DISABLE_FLOWISE_BRANDING=true
             - DISABLED_NODES=${DISABLED_NODES}
             - MODEL_LIST_CONFIG_JSON=${MODEL_LIST_CONFIG_JSON}
 
